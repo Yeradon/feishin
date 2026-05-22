@@ -23,10 +23,10 @@ importers:
         version: 1.1.0
       '@electron-toolkit/preload':
         specifier: ^3.0.2
-        version: 3.0.2(electron@42.2.0)
+        version: 3.0.2(electron@43.0.0-alpha.5)
       '@electron-toolkit/utils':
         specifier: ^4.0.0
-        version: 4.0.0(electron@42.2.0)
+        version: 4.0.0(electron@43.0.0-alpha.5)
       '@mantine/colors-generator':
         specifier: ^9.1.1
         version: 9.1.1(chroma-js@3.1.2)
@@ -269,8 +269,8 @@ importers:
         specifier: ^10.1.0
         version: 10.1.0
       electron:
-        specifier: ^42.2.0
-        version: 42.2.0
+        specifier: ^43.0.0-alpha.5
+        version: 43.0.0-alpha.5
       electron-builder:
         specifier: ^26.8.2
         version: 26.8.2(electron-builder-squirrel-windows@26.8.2)
@@ -3004,6 +3004,11 @@ packages:
     engines: {node: '>= 22.12.0'}
     hasBin: true
 
+  electron@43.0.0-alpha.5:
+    resolution: {integrity: sha512-yhNWMsvkQNrnh+gcFz7XGz3W2yGtKzVin4tegQ7EOYzWFMeFABR6x2AOrdti23iwl0xpTGufK7ymbIi9Gt4OUQ==}
+    engines: {node: '>= 22.12.0'}
+    hasBin: true
+
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -4269,7 +4274,7 @@ packages:
     hasBin: true
 
   node-mpv@https://codeload.github.com/jeffvli/Node-MPV/tar.gz/32b4d64395289ad710c41d481d2707a7acfc228f:
-    resolution: {gitHosted: true, integrity: sha512-jWGM4rQH2NnorZ8BEG+AIEGqP3PzahlRosqJVGhd0Qu2sEu/aDG5FVO0nbMSbkYEeLMvB16PqXl+Hsd9xbQFgA==, tarball: https://codeload.github.com/jeffvli/Node-MPV/tar.gz/32b4d64395289ad710c41d481d2707a7acfc228f}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/jeffvli/Node-MPV/tar.gz/32b4d64395289ad710c41d481d2707a7acfc228f}
     version: 2.0.0-beta.3
 
   node-releases@2.0.37:
@@ -6683,17 +6688,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@electron-toolkit/preload@3.0.2(electron@42.2.0)':
+  '@electron-toolkit/preload@3.0.2(electron@43.0.0-alpha.5)':
     dependencies:
-      electron: 42.2.0
+      electron: 43.0.0-alpha.5
 
   '@electron-toolkit/tsconfig@2.0.0(@types/node@24.12.2)':
     dependencies:
       '@types/node': 24.12.2
 
-  '@electron-toolkit/utils@4.0.0(electron@42.2.0)':
+  '@electron-toolkit/utils@4.0.0(electron@43.0.0-alpha.5)':
     dependencies:
-      electron: 42.2.0
+      electron: 43.0.0-alpha.5
 
   '@electron/asar@3.4.1':
     dependencies:
@@ -8795,6 +8800,14 @@ snapshots:
       - supports-color
 
   electron@42.2.0:
+    dependencies:
+      '@electron/get': 5.0.0
+      '@types/node': 24.12.2
+      extract-zip: 2.0.1
+    transitivePeerDependencies:
+      - supports-color
+
+  electron@43.0.0-alpha.5:
     dependencies:
       '@electron/get': 5.0.0
       '@types/node': 24.12.2
